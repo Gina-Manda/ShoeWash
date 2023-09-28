@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+li {
+    list-style: none;
+}
+
+ header a{
+     text-decoration: none;
+ }
+
+ header {
+     display: flex;
+     flex-direction: row;
+     height: 90px;
+     background: rgba(255, 255, 255, 0);
+     justify-content: space-around;
+     align-items: center;
+     
+ }
+
+ header .logo-div{
+  padding-top: .7rem;
+ }
+
+ header .logo{
+    max-height: 70px;
+    
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-evenly;
+     width: 30%;
+     font-size: 1.2rem;
+     color: #fff !important;
+ }
+
+ nav a{
+    color: #fff;
+ }
+
+ /* LANDING PAGES */
+ 
+ .landing-page {
+     display: flex;
+     font-size: 25px;
+     flex-direction: column;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/landing.jpg') no-repeat center/cover;
+     height: 100vh;
+
+     color: pink;
+     
+ }
+
+
+ .landing-page >div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    margin-top: 10%;
+ }
+ .landing-page button{
+     margin-top: 50px;
+     width: 160px;
+     padding: 12px;
+     border:1px solid pink;
+     border-radius: 50px;
+     color:pink;
+     background: rgb(115, 115, 187)  ;
+     font-size: 18px;
+ }
+
+ /* SERVICES */
+ .services {
+     padding: 30px 0px 2px 0px;
+     margin-bottom: 0;
+ }
+
+ hr {
+     width: 100px;
+     margin-left: 47%;
+     border: 1px solid pink;
+     background-color: pink;
+ }
+
+ .services h1 {
+ font-size: 40px;
+ text-align: center;
+ }
+
+ .services > div {
+     display: flex;
+     justify-content: center;
+ }
+
+ .services > div:nth-child(odd){
+     background: pink;
+ }
+
+ .services > div:nth-child(odd) img{
+     order: 2;
+ }
+
+ .services > div img{
+     width:420px;
+     height: 350px;
+     margin-top: 30px;
+     object-fit: cover; 
+     
+ }
+
+ /* the text box next to the image */
+ .services  div > div {
+     width:400px ;
+     text-align: center;
+     margin-left: 60px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     font-size: 18px;
+   
+ }
+
+ .services h1{
+    color: rgb(115, 115, 187);
+ }
+
+ .last{
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+
+ /* footer area */
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background-color: black;
+    color: pink;
+    min-height: 300px;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-logo{
+    width: 120px;
+    margin-top: 4rem;
+
+    animation: pop 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    transform-origin: center bottom; /* Adjust the transform origin for the desired effect */
+}
+
+/* Logo Pop Animation */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+footer h1 a{
+    color: rgb(162, 255, 162) ;
+   
+}
+
+footer h1{
+    margin-top: 30px;
+}
+
+footer ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-basis: 33%; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px; 
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+
+
+footer ul li .fab{
+    color: rgb(0, 0, 0);
+    margin-right: .5rem;
+    font-size: 25px;
+    
+}
+
+footer input{
+    font-family: poppins;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+    padding: 10px 5px;
+    background: transparent;
+    border: solid 1px rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 250px;
+    color: #fff;
+    
+}
+
+footer input:focus{
+    outline: none;
+    border-color: rgb(252, 252, 191); 
+    
+}
+
+footer input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: pink;
+    font-family: poppins;
+    text-align: center;
+    opacity: 1; /* Firefox */
+  }
+
+footer button{
+    font-size: 16px;
+    font-family: poppins;
+    margin-top: 8px;
+    padding: 7px 100px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:blueviolet;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+footer button:hover {
+    border-color:pink ;
+}
+
+footer ul li:hover, footer a:hover{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+footer ul:nth-child(5) li:hover{
+    color: #fff;
+}
+
+footer ul:last-child li{
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+footer a{
+    color: #fff;
+}
+
+p.copy{
+    min-width:100% ;
+    background-color: blueviolet;
+    padding: 18px;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
